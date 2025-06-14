@@ -10,7 +10,8 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 remove -y lutris waydroid sunshine discover-overlay kcm-fcitx5 rom-properties-kf6 webapp-manager ublue-brew
+dnf5 remove -y lutris waydroid sunshine discover-overlay rom-properties-kf6 webapp-manager ublue-brew filelight kfind plasma-disks
+dnf5 install -y gparted
 
 # Use a COPR Example:
 #
