@@ -8,3 +8,26 @@ dnf5 install -y \
     fastfetch \
     fish \
     distrobox
+
+# remove default useless packages
+    dnf5 remove -y \
+    filelight \
+    kfind \
+    kcharselect \
+    kde-partitionmanager \
+    khelpcenter \
+    plasma-welcome-fedora \
+    plasma-welcome
+
+
+
+
+
+# remove flatpak games and nonsense
+    flatpak remove -y \
+    org.kde.kmahjongg \
+    org.kde.kmines \
+    org.kde.skanpage \
+    org.kde.elisa \
+    org.kde.krdc
+
