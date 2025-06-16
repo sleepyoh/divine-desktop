@@ -7,7 +7,12 @@ dnf5 install -y \
     gparted \
     fastfetch \
     fish \
-    distrobox
+    distrobox \
+    btop \
+    htop \
+    gdu \
+    kitty \
+    kitty-terminfo
 
 # remove default useless packages
     dnf5 remove -y \
@@ -17,9 +22,13 @@ dnf5 install -y \
     kde-partitionmanager \
     khelpcenter \
     plasma-welcome-fedora \
-    plasma-welcome
+    plasma-welcome \
+    firefox \
+    firefox-langpacks
 
 
+# Enabling systemd-services
+    systemctl enable podman.socket
 
 
 
