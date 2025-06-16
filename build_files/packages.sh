@@ -7,7 +7,8 @@ dnf5 install -y \
     fastfetch \
     distrobox \
     htop \
-    ptyxis
+    ptyxis \
+    adobe-source-code-pro
 
 
 # remove default useless packages
@@ -26,6 +27,8 @@ dnf5 install -y \
 # Enabling systemd-services
     systemctl enable podman.socket
 
+    #not sure about this one, saw this one in someone else's repo.
+    #systemctl enable usr-share-sddm-themes.mount
 
 
 # remove flatpak games and nonsense

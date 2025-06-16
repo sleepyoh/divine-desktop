@@ -10,7 +10,9 @@ We switch all Fedora flatpaks to Flathub flatpaks on first boot, and then disabl
 
 we get all good codecs from rpmfusion, we change mesa to mesa-freeworld to benefit from full hardware acceleration on Amd graphics cards.  
 
-We install some useful things like Distrobox, Fish shell, Tmux, Fastfetch, Btop and Htop to base image. 
+We install some useful things like Distrobox, Fastfetch and Htop.
+
+That's about it (for now)!
 
 # How does it work?
 
