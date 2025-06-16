@@ -8,7 +8,7 @@ dnf5 install -y \
     distrobox \
     htop \
     ptyxis \
-    adobe-source-code-pro
+    adobe-source-code-pro-fonts
 
 
 # remove default useless packages
