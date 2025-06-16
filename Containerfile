@@ -10,8 +10,9 @@ FROM quay.io/fedora/fedora-kinoite
 # Fedora base image: quay.io/fedora/fedora-bootc:41
 # CentOS base images: quay.io/centos-bootc/centos-bootc:stream10
 
-# kanske enablar senare, borde mest affect nyinstall/iso making?
 
+#This copies all the files from folder rootfs to /
+#This is how we get systemd-unit files, and other files we want to to copy to the immutable system.
 COPY rootfs/ /
 
 

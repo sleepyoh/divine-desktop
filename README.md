@@ -1,18 +1,24 @@
-# image-template
-
 # Purpose
 
-This repository is a custom build of Fedora silverblue, inspired originally by Bazzite, made for fun and as a learning experience. 
+This repository is a custom build of Fedora silverblue, inspired originally by Ublue, and it's images. 
 
 # Goal
 
-The goal of this image is mostly for myself. We remove default flatpaks for flathub flatpaks, we get all good codecs from rpmfusion, we change mesa to mesa-freeworld. Other then that we just add our packages we want to have installed to our base image. (often cli/system stuff such as distrobox which you need to have as a base-package)
+The goal of this image is to create a stable Immutable Plasma desktop with as many packages removed from base plasma as possible, and opting for everything from Flatpak@Flathub. This means Firefox, filelight, krdc, is all removed to give a blank Plasma canvas.
+
+We switch all Fedora flatpaks to Flathub flatpaks on first boot, and then disable Fedora flatpak repo, and we enable a timer that removes old unused flatpaks on boot. 
+
+we get all good codecs from rpmfusion, we change mesa to mesa-freeworld to benefit from full hardware acceleration on Amd graphics cards.  
+
+We install some useful things like Distrobox, Fish shell, Tmux, Fastfetch, Btop and Htop to base image. 
 
 # How does it work?
 
-The containerfile sets up so we can have bash scripts in build_files instead of having a giant containerfile with everything. It pulls the latest Kinoite, copies the flathub files from repo to root, and then sets up our mounts. 
+The containerfile sets up so we can have bash scripts in build_files instead of having a giant containerfile with everything. Only reason for this is to make simpler, and comparmentalize different steps in the build. 
 
-All scripts that installs, removes, enables systemd timers and so on lives in build_files directory, and build.sh just points to the other scripts where we do what we want. 
+All scripts that installs, removes, enables systemd timers and so on lives in build_files directory, Build.sh  points to the other scripts where we do what we want. We can add more, disable current scripts, and so on. 
+
+The containerfile is also responsible for copying all our files from repo rootfs to /. Here we can add themes, systemd unit files, anything we want to copy over to the Immutables system. 
 
 
 

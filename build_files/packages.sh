@@ -3,16 +3,12 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y \
-    tmux \
     gparted \
     fastfetch \
-    fish \
     distrobox \
-    btop \
     htop \
-    gdu \
-    kitty \
-    kitty-terminfo
+    ptyxis
+
 
 # remove default useless packages
     dnf5 remove -y \
