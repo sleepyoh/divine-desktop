@@ -24,10 +24,10 @@ dnf5 install -y \
 
 
 # remove flatpak games and nonsense
-    flatpak remove -y \
-    org.kde.kmahjongg \
-    org.kde.kmines \
-    org.kde.skanpage \
-    org.kde.elisa \
-    org.kde.krdc
+   # flatpak remove -y \
+    #org.kde.kmahjongg \
+    #org.kde.kmines \
+    #org.kde.skanpage \
+    #org.kde.elisa \
+    #org.kde.krdc
 
