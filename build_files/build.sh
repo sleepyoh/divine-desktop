@@ -1,25 +1,26 @@
 #!/bin/bash
-
 set -ouex pipefail
 
-### Install packages
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-# Packages can be installed from any enabled yum repo on the image.
-# RPMfusion repos are available by default in ublue main images
-# List of rpmfusion packages can be found here:
-# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
+echo "Starting build process..."
 
-# this installs a package from fedora repos
-dnf5 remove -y lutris waydroid sunshine discover-overlay rom-properties-kf6 webapp-manager ublue-brew filelight kfind plasma-disks
-dnf5 install -y gparted
+echo "Installing packages..."
+bash "$SCRIPT_DIR/packages.sh"
 
-# Use a COPR Example:
-#
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
-# Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+echo "replaceing flatpaks..."
+bash "$SCRIPT_DIR/flatpakreplace.sh"
 
-#### Example for enabling a System Unit File
+echo "place holders..."
+bash "$SCRIPT_DIR/placeholder.sh"
 
-systemctl enable podman.socket
+echo "placeholder..."
+bash "$SCRIPT_DIR/placeholder.sh"
+
+echo "Cleaning up..."
+bash "$SCRIPT_DIR/cleanup.sh"
+
+echo "Finalizing image..."
+bash "$SCRIPT_DIR/finalize_image.sh"
+
+echo "Build process completed."
