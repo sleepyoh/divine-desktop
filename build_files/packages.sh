@@ -21,7 +21,16 @@ dnf5 install -y \
     plasma-welcome-fedora \
     plasma-welcome \
     firefox \
-    firefox-langpacks
+    firefox-langpacks \
+    krfb \
+    krfb-libs \
+    kdebugsettings \
+    konsole \
+    plasma-drkonqi
+
+
+    #kjournald \
+    #kjournald-libs \
 
 
 # Enabling systemd-services
