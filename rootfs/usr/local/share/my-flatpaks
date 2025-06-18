@@ -16,14 +16,8 @@ net.davidotek.pupgui2
 org.gnome.Boxes
 org.gnome.Boxes.Extension.OsinfoDb
 org.gnome.Maps
-org.gnome.Platform/x86_64/48
-org.gnome.Platform/x86_64/48
-org.gnome.Platform.Compat.i386/x86_64/48
 org.gtk.Gtk3theme.adw-gtk3
 org.gtk.Gtk3theme.adw-gtk3-dark
-org.kde.Platform/x86_64/6.9
-org.kde.Platform/x86_64/6.9
-org.kde.Platform/x86_64/6.9
 org.kde.gwenview
 org.kde.kate
 org.kde.kcalc
