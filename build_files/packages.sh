@@ -8,9 +8,9 @@ dnf5 install -y \
     distrobox \
     ptyxis \
     adobe-source-code-pro-fonts \
-    steam-devices \
-    libvirt \
-    qemu
+    steam-devices
+    #libvirt \
+    #qemu
 
 
 # remove default useless packages
@@ -38,7 +38,7 @@ dnf5 install -y \
 
 # Enabling systemd-services
     systemctl enable podman.socket
-    systemctl enable libvirtd.service
+    #systemctl enable libvirtd.service
 
     #not sure about this one, saw this one in someone else's repo.
     #systemctl enable usr-share-sddm-themes.mount
