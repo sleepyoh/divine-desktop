@@ -9,7 +9,9 @@ dnf5 install -y \
     htop \
     ptyxis \
     adobe-source-code-pro-fonts \
-    steam-devices
+    steam-devices \
+    libvirt \
+    qemu
 
 
 # remove default useless packages
@@ -30,22 +32,17 @@ dnf5 install -y \
     plasma-drkonqi
 
 
+# We can remove this safely if we want to, but it might be useful to keep.
     #kjournald \
     #kjournald-libs \
 
 
 # Enabling systemd-services
     systemctl enable podman.socket
+    systemctl enable libvirtd.service
 
     #not sure about this one, saw this one in someone else's repo.
     #systemctl enable usr-share-sddm-themes.mount
 
 
-# remove flatpak games and nonsense
-   # flatpak remove -y \
-    #org.kde.kmahjongg \
-    #org.kde.kmines \
-    #org.kde.skanpage \
-    #org.kde.elisa \
-    #org.kde.krdc
 
