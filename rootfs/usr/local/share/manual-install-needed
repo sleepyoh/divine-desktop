@@ -1,0 +1,5 @@
+We want these flatpaks, but we can't install them non-interactively. We need to do this ourselves!
+
+org.freedesktop.Platform.VulkanLayer.MangoHud
+org.freedesktop.Platform.VulkanLayer.OBSVkCapture
+org.freedesktop.Platform.VulkanLayer.vkBasalt

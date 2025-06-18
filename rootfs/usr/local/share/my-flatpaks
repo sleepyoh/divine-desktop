@@ -13,8 +13,6 @@ dev.geopjr.Archives
 io.github.flattool.Warehouse
 io.missioncenter.MissionCenter
 net.davidotek.pupgui2
-org.freedesktop.LinuxAudio.Plugins.TAP
-org.freedesktop.LinuxAudio.Plugins.swh
 org.freedesktop.Platform
 org.freedesktop.Platform.Compat.i386
 org.freedesktop.Platform.GL.default
