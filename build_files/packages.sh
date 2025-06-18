@@ -9,8 +9,6 @@ dnf5 install -y \
     ptyxis \
     adobe-source-code-pro-fonts \
     steam-devices
-    #libvirt \
-    #qemu
 
 
 # remove default useless packages

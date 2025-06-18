@@ -9,3 +9,5 @@ Persistent=true
 
 [Install]
 WantedBy=timers.target
+
+#Runs 15 minutes after boot, and then every 12 hours. Triggers the cleanup service file.
