@@ -21,9 +21,9 @@ org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL.default
 org.freedesktop.Platform.GL32.default
 org.freedesktop.Platform.GL32.default
-org.freedesktop.Platform.VulkanLayer.MangoHud
-org.freedesktop.Platform.VulkanLayer.OBSVkCapture
-org.freedesktop.Platform.VulkanLayer.vkBasalt
+#org.freedesktop.Platform.VulkanLayer.MangoHud
+#org.freedesktop.Platform.VulkanLayer.OBSVkCapture
+#org.freedesktop.Platform.VulkanLayer.vkBasalt
 org.freedesktop.Platform.ffmpeg-full
 org.freedesktop.Platform.ffmpeg_full.i386
 org.freedesktop.Platform.openh264
