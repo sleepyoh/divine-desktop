@@ -3,4 +3,4 @@ set -ouex pipefail
 
 
 dnf copr enable gloriouseggroll/nobara-42
-dnf install kernel
+dnf install -y kernel
