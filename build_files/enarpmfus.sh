@@ -18,11 +18,11 @@ rpm-ostree override remove \
 		libswresample-free \
 		libswscale-free \
 		--install=ffmpeg \
-		--install=gstreamer1-plugin-libav \
+		#--install=gstreamer1-plugin-libav \
 		#--install=gstreamer1-plugins-bad-free-extras \
 		#--install=gstreamer1-plugins-bad-freeworld \
 		#--install=gstreamer1-plugins-ugly \
-		--install=gstreamer1-vaapi
+		#--install=gstreamer1-vaapi
 
 		rpm-ostree override remove \
 		mesa-va-drivers \
