@@ -16,7 +16,7 @@ echo "Installing packages..."
 bash "$SCRIPT_DIR/packages.sh"
 
 echo "Installing kernel..."
-bash "$SCRIPT_DIR/bazz-kern.sh"
+bash "$SCRIPT_DIR/kernel.sh"
 
 echo "Cleaning up..."
 bash "$SCRIPT_DIR/cleanup.sh"
