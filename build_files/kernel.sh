@@ -17,5 +17,3 @@ version=$(rpm -q --queryformat "%{VERSION}-%{RELEASE}.%{ARCH}\n" $latest_kernel)
 echo "Kernel to build initramfs for: $version"
 dracut --force "/boot/initramfs-${version}.img" "$version"
 
-echo "🔃 Updating bootloader (grub2-mkconfig)..."
-grub2-mkconfig -o /boot/grub2/grub.cfg
