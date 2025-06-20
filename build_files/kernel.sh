@@ -9,3 +9,13 @@ dnf --enablerepo=copr:copr.fedorainfracloud.org:gloriouseggroll:nobara-42 list k
 
 echo "🌀 Installing Nobara kernel, replacing stock Fedora kernel if needed..."
 dnf install -y kernel --best --refresh --enablerepo=copr:copr.fedorainfracloud.org:gloriouseggroll:nobara-42 --allowerasing
+
+echo "⚙️ Rebuilding initramfs for the new kernel..."
+latest_kernel=$(rpm -q --last kernel | head -n1 | awk '{print $1}')
+version=$(rpm -q --queryformat "%{VERSION}-%{RELEASE}.%{ARCH}\n" $latest_kernel)
+
+echo "Kernel to build initramfs for: $version"
+dracut --force "/boot/initramfs-${version}.img" "$version"
+
+echo "🔃 Updating bootloader (grub2-mkconfig)..."
+grub2-mkconfig -o /boot/grub2/grub.cfg
