@@ -17,11 +17,10 @@ rpm-ostree override remove \
 		libpostproc-free \
 		libswresample-free \
 		libswscale-free \
-		gstreamer1-plugins-bad-free \
 		--install=ffmpeg \
 		--install=gstreamer1-plugin-libav \
 		--install=gstreamer1-plugins-bad-free-extras \
-		--install=gstreamer1-plugins-bad-freeworld \
+		#--install=gstreamer1-plugins-bad-freeworld \
 		--install=gstreamer1-plugins-ugly \
 		--install=gstreamer1-vaapi
 
