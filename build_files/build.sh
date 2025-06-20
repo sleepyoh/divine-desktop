@@ -15,8 +15,8 @@ bash "$SCRIPT_DIR/enarpmfus.sh"
 echo "Installing packages..."
 bash "$SCRIPT_DIR/packages.sh"
 
-echo "Installing kernel..."
-bash "$SCRIPT_DIR/kernel.sh"
+#echo "Installing kernel..."
+#bash "$SCRIPT_DIR/kernel.sh"
 
 echo "Cleaning up..."
 bash "$SCRIPT_DIR/cleanup.sh"
