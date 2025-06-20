@@ -3,7 +3,9 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM quay.io/fedora/fedora-kinoite
+ARG FEDORA_MAJOR_VERSION=42
+FROM quay.io/fedora/fedora-kinoite:${FEDORA_MAJOR_VERSION}
+#FROM quay.io/fedora/fedora-kinoite
 
 ## Other possible base images include:
 # Universal Blue Images: https://github.com/orgs/ublue-os/packages
