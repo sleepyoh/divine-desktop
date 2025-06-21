@@ -12,7 +12,7 @@ we get all good codecs from rpmfusion, we change mesa to mesa-freeworld to benef
 
 We install some useful things like Distrobox, Fastfetch and Htop.
 
-That's about it (for now)!
+We get latest CachyOs kernel from official copr repo.
 
 # How does it work?
 
