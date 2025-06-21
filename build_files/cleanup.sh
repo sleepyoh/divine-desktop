@@ -20,3 +20,7 @@ chmod -R 1777 /var/tmp
 # Remove tmp files and everything in dirs that make bootc unhappy
 rm -rf /usr/etc
 rm -rf /boot && mkdir /boot # This line is good and should be kept
+
+# Commit and lint container
+ostree container commit
+bootc container lint
