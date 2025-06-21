@@ -25,4 +25,3 @@ rpm-ostree override remove \
  --install kernel-cachyos-modules \
  --install kernel-cachyos-modules-core \
  --install kernel-cachyos-modules-extra \
- --idempotent # Added --idempotent for robustness
