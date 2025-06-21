@@ -18,6 +18,9 @@ bash "$SCRIPT_DIR/packages.sh"
 echo "Installing copr stuff..."
 bash "$SCRIPT_DIR/copr.sh"
 
+echo "Installing Steam theme..."
+bash "$SCRIPT_DIR/steam-vapor.sh"
+
 echo "Cleaning up..."
 bash "$SCRIPT_DIR/cleanup.sh"
 
