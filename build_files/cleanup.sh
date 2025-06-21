@@ -4,7 +4,7 @@ set -ouex pipefail
 #Removing repos after build
 
 #dnf5 -y copr remove ublue-os/packages
-dnf5 -y copr remove bieszczaders/kernel-cachyos
+#dnf5 -y copr remove bieszczaders/kernel-cachyos
 
 ### Cleaning
 # Clean package manager cache
