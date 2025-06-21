@@ -35,3 +35,5 @@ org.virt_manager.virt_manager.Extension.Qemu
 runtime/org.freedesktop.Platform.VulkanLayer.MangoHud/x86_64/24.08
 runtime/org.freedesktop.Platform.VulkanLayer.OBSVkCapture/x86_64/24.08
 runtime/org.freedesktop.Platform.VulkanLayer.vkBasalt/x86_64/24.08
+com.vscodium.codium
+io.github.shiftey.Desktop
