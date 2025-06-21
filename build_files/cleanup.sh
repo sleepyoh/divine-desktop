@@ -19,7 +19,7 @@ chmod -R 1777 /var/tmp
 # Cleanup specific to bootc (important for non-empty boot issue)
 # Remove tmp files and everything in dirs that make bootc unhappy
 #rm -rf /usr/etc It says it's recommended, but idk. not using it since it has not mattered yet. 
-rm -rf /boot && mkdir /boot # This line is good and should be kept
+rm -rf /boot && mkdir /boot # This line is good and should be kept, we get non empty boot errors otherwise.
 
 # Commit and lint container. these are handled Externalla by redhat's buildah, it knows we are doing a container image. we dont need this anymore.
 #ostree container commit
