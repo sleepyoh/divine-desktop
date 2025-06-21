@@ -9,14 +9,20 @@ set -ouex pipefail
 
     #Trying to see if you can use CachyOS kernel, for fun.
 
-    setsebool -P domain_kernel_load_modules on
 
-    dnf5 -y copr enable bieszczaders/kernel-cachyos
+setsebool -P domain_kernel_load_modules on
 
-    rpm-ostree override remove \
-     kernel \
-     kernel-core \
-     kernel-modules \
-     kernel-modules-core \
-     kernel-modules-extra \
-     --install kernel-cachyos
+dnf5 -y copr enable bieszczaders/kernel-cachyos
+
+rpm-ostree override remove \
+ kernel \
+ kernel-core \
+ kernel-modules \
+ kernel-modules-core \
+ kernel-modules-extra \
+ --install kernel-cachyos \
+ --install kernel-cachyos-core \
+ --install kernel-cachyos-modules \
+ --install kernel-cachyos-modules-core \
+ --install kernel-cachyos-modules-extra \
+ --idempotent # Added --idempotent for robustness
