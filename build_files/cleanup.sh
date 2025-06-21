@@ -1,6 +1,13 @@
 #!/bin/bash
 set -ouex pipefail
 
+##rm rpmfusion repos
+rm /etc/yum.repos.d/rpmfusion*
+rm /etc/yum.repos.d/google-chrome.repo
+
+##disable another copr-stock-repo
+dnf5 -y copr remove phracek/PyCharm 
+
 ### Cleaning
 # Clean package manager cache
 dnf5 clean all
