@@ -7,6 +7,8 @@ set -ouex pipefail
 #dnf5 -y install \
     #ublue-os-just
 
+    #dnf5 -y copr remove ublue-os/packages
+
     #Trying to see if you can use CachyOS kernel, for fun.
 
     setsebool -P domain_kernel_load_modules on
@@ -23,5 +25,6 @@ set -ouex pipefail
 
      #Removing repos after build
 
-#dnf5 -y copr remove ublue-os/packages
 dnf5 -y copr remove bieszczaders/kernel-cachyos
+##disable another copr-stock-repo
+dnf5 -y copr remove phracek/PyCharm

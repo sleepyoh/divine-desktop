@@ -1,12 +1,8 @@
 #!/bin/bash
 set -ouex pipefail
 
-##rm rpmfusion repos
-rm /etc/yum.repos.d/rpmfusion*
-rm /etc/yum.repos.d/google-chrome.repo
-
-##disable another copr-stock-repo
-dnf5 -y copr remove phracek/PyCharm 
+# To disable all RPM Fusion repos with a wildcard (if supported)
+dnf5 -y config-manager setopt "rpmfusion*.enabled=0"
 
 ### Cleaning
 # Clean package manager cache
