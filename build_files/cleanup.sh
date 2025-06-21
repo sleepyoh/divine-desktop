@@ -15,3 +15,7 @@ find /var/cache/* -maxdepth 0 -type d \! -name libdnf5 \! -name rpm-ostree -exec
 # Restore and setup directories
 mkdir -p /var/tmp
 chmod -R 1777 /var/tmp
+
+# Commit and lint container
+ostree container commit
+bootc container lint

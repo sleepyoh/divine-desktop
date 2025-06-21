@@ -35,12 +35,3 @@ dnf5 install -y \
     #kjournald-libs \
 
 
-# Enabling systemd-services
-    systemctl enable podman.socket
-    #systemctl enable libvirtd.service
-
-    #not sure about this one, saw this one in someone else's repo.
-    #systemctl enable usr-share-sddm-themes.mount
-
-
-
