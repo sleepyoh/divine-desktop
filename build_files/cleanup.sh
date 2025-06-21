@@ -6,7 +6,8 @@ set -ouex pipefail
 dnf5 clean all
 
 # Clean temporary files
-rm -rf /var/tmp/*
+rm -rf /tmp/*
+rm -rf /var/tmp
 
 # Clean /var directory while preserving essential files
 find /var/* -maxdepth 0 -type d \! -name cache -exec rm -fr {} \;
