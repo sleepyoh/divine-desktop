@@ -2,9 +2,8 @@
 set -ouex pipefail
 
 ## Disable rpm-fusion
-rpm-ostree update \
-  --uninstall rpmfusion-free-release \
-  --uninstall rpmfusion-nonfree-release
+dnf5 remove rpmfusion-nonfree-release \
+dnf5 remove rpmfusion-free-release
 
 ### Cleaning
 # Clean package manager cache
