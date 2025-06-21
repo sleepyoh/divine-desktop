@@ -18,5 +18,4 @@ chmod -R 1777 /var/tmp
 
 # Cleanup specific to bootc (important for non-empty boot issue)
 # Remove tmp files and everything in dirs that make bootc unhappy
-rm -rf /usr/etc 
 rm -rf /boot && mkdir /boot # This line is good and should be kept, we get non empty boot errors otherwise.
