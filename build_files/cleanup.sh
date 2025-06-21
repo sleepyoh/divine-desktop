@@ -1,6 +1,10 @@
 #!/bin/bash
 set -ouex pipefail
 
+#Removing repos after build
+
+dnf5 -y copr remove ublue-os/packages
+
 ### Cleaning
 # Clean package manager cache
 dnf5 clean all
