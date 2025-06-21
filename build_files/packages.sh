@@ -8,7 +8,8 @@ dnf5 install -y \
     distrobox \
     ptyxis \
     adobe-source-code-pro-fonts \
-    steam-devices
+    steam-devices \
+    just
 
 
 # remove default useless packages
