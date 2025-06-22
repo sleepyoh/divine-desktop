@@ -27,4 +27,3 @@ set -ouex pipefail
      #Removing repos after build
 
 dnf5 -y copr remove bieszczaders/kernel-cachyos
-##disable another copr-stock-repo
