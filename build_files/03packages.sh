@@ -11,7 +11,6 @@ dnf5 install -y \
     steam-devices \
     zstd
 
-
 # remove default useless packages
     dnf5 remove -y \
     filelight \
@@ -29,9 +28,6 @@ dnf5 install -y \
     konsole \
     plasma-drkonqi
 
-
 # We can remove this safely if we want to, but it might be useful to keep.
     #kjournald \
     #kjournald-libs \
-
-

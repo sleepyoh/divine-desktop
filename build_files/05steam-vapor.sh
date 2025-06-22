@@ -14,16 +14,6 @@ DOWNLOAD_URL="https://steamdeck-packages.steamos.cloud/archlinux-mirror/jupiter-
 echo "Attempting to download: ${DOWNLOAD_URL}"
 curl -L "${DOWNLOAD_URL}" -o "${TEMP_DIR}/${PACKAGE_FULL_FILENAME}"
 
-# --- DIAGNOSTIC STEPS ---
-# These commands will show us what was actually downloaded.
-# Look for output that indicates "HTML document", "text", or a very small size if it failed.
-# A successful download should show "Zstandard compressed data" or similar, and a reasonable size.
-echo "--- Downloaded File Info ---"
-ls -lh "${TEMP_DIR}/${PACKAGE_FULL_FILENAME}"
-file "${TEMP_DIR}/${PACKAGE_FULL_FILENAME}"
-echo "--------------------------"
-# --- END DIAGNOSTIC STEPS ---
-
 # Extract the package content into the temporary directory
 echo "Extracting package content..."
 tar -xf "${TEMP_DIR}/${PACKAGE_FULL_FILENAME}" -C "${TEMP_DIR}"

@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-set -euo pipefail
+set -euox pipefail
 
 rpm-ostree install \
 		https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \

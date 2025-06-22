@@ -11,6 +11,7 @@ set -ouex pipefail
 
     #Trying to see if you can use CachyOS kernel, for fun.
 
+    #We need this to be able to load kernel modules if we change kernel, because of se-linux.
     setsebool -P domain_kernel_load_modules on
 
     dnf5 -y copr enable bieszczaders/kernel-cachyos
@@ -27,4 +28,3 @@ set -ouex pipefail
 
 dnf5 -y copr remove bieszczaders/kernel-cachyos
 ##disable another copr-stock-repo
-dnf5 -y copr remove phracek/PyCharm

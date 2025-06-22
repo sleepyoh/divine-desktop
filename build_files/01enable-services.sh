@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-set -euo pipefail
+set -euox pipefail
 
 	# Enabling systemd-services
     systemctl enable podman.socket

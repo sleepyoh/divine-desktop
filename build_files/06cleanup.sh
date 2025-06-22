@@ -4,6 +4,9 @@ set -ouex pipefail
 # To disable all RPM Fusion repos with a wildcard (if supported)
 dnf5 -y config-manager setopt "rpmfusion*.enabled=0"
 
+# Disabling a default fedora repo for som copr-python thing
+dnf5 -y copr remove phracek/PyCharm
+
 ### Cleaning
 # Clean package manager cache
 dnf5 clean all
@@ -19,6 +22,5 @@ find /var/cache/* -maxdepth 0 -type d \! -name libdnf5 \! -name rpm-ostree -exec
 mkdir -p /var/tmp
 chmod -R 1777 /var/tmp
 
-# Cleanup specific to bootc (important for non-empty boot issue)
-# Remove tmp files and everything in dirs that make bootc unhappy
+# Cleanup specific to bootc (important for non-empty boot issue) not needed if not changing to CachyOs kernel.
 rm -rf /boot && mkdir /boot # This line is good and should be kept, we get non empty boot errors otherwise.
