@@ -8,5 +8,6 @@ rm \
     /etc/system-release \
     /etc/system-release-cpe \
     /etc/yum.repos.d/rpmfusion*
+    /etc/yum.repos.d/fedora-cisco-openh264.repo
 
     cp /usr/local/share/os-release /etc/os-release
