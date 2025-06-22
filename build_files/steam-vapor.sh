@@ -46,9 +46,9 @@ cp -r "${TEMP_DIR}/usr/share/plasma/avatars" /usr/share/plasma/
 mkdir -p /usr/share/plasma/desktoptheme/Vapor
 cp -r "${TEMP_DIR}/usr/share/plasma/desktoptheme/Vapor" /usr/share/plasma/desktoptheme/
 
-# Vapor Look-and-feel
-mkdir -p /usr/share/plasma/look-and-feel/com.valve.vapor
-cp -r "${TEMP_DIR}/usr/share/plasma/look-and-feel/com.valve.vapor" /usr/share/plasma/look-and-feel/
+# CORRECTED: Use 'com.valve.vapor.desktop' as the directory name
+mkdir -p /usr/share/plasma/look-and-feel/com.valve.vapor.desktop
+cp -r "${TEMP_DIR}/usr/share/plasma/look-and-feel/com.valve.vapor.desktop" /usr/share/plasma/look-and-feel/
 
 # Wallpapers
 if [ -d "${TEMP_DIR}/usr/share/wallpapers" ]; then
