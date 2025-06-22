@@ -1,20 +1,32 @@
 #!/bin/bash
 set -ouex pipefail
 
-# Define the version of the Steam Deck KDE presets directly in this script.
-# IMPORTANT: Update this variable if you want to use a different (e.g., newer) 0.x.Y version.
-STEAMDECK_KDE_PRESETS_VER="0.29" # <--- VERSION SET TO 0.29
+# Define the exact full filename of the package.
+# This must match precisely what is on the server at the download URL.
+PACKAGE_FULL_FILENAME="steamdeck-kde-presets-0.29-1-any.pkg.tar.zst"
 
 TEMP_DIR=$(mktemp -d)
 
+# Construct the full download URL
+DOWNLOAD_URL="https://steamdeck-packages.steamos.cloud/archlinux-mirror/jupiter-main/os/x86_64/${PACKAGE_FULL_FILENAME}"
+
 # Download the Steam Deck KDE Presets package
-echo "Downloading Steam Deck KDE Presets version: ${STEAMDECK_KDE_PRESETS_VER}"
-curl -L "https://steamdeck-packages.steamos.cloud/archlinux-mirror/jupiter-main/os/x86_64/steamdeck-kde-presets-${STEAMDECK_KDE_PRESETS_VER}-1-any.pkg.tar.zst" \
-    -o "${TEMP_DIR}/steamdeck-kde-presets.pkg.tar.zst"
+echo "Attempting to download: ${DOWNLOAD_URL}"
+curl -L "${DOWNLOAD_URL}" -o "${TEMP_DIR}/${PACKAGE_FULL_FILENAME}"
+
+# --- DIAGNOSTIC STEPS ---
+# These commands will show us what was actually downloaded.
+# Look for output that indicates "HTML document", "text", or a very small size if it failed.
+# A successful download should show "Zstandard compressed data" or similar, and a reasonable size.
+echo "--- Downloaded File Info ---"
+ls -lh "${TEMP_DIR}/${PACKAGE_FULL_FILENAME}"
+file "${TEMP_DIR}/${PACKAGE_FULL_FILENAME}"
+echo "--------------------------"
+# --- END DIAGNOSTIC STEPS ---
 
 # Extract the package content into the temporary directory
 echo "Extracting package content..."
-tar -xf "${TEMP_DIR}/steamdeck-kde-presets.pkg.tar.zst" -C "${TEMP_DIR}"
+tar -xf "${TEMP_DIR}/${PACKAGE_FULL_FILENAME}" -C "${TEMP_DIR}"
 
 # --- Copy theme components to their final destinations ---
 echo "Copying theme components..."
