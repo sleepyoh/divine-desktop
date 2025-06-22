@@ -10,8 +10,7 @@ dnf5 install -y \
     adobe-source-code-pro-fonts \
     steam-devices \
     just \
-    zstd \
-    mangohud
+    zstd
 
 
 # remove default useless packages
