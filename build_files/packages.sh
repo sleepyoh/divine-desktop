@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ouex pipefail
 
-# this installs a package from fedora repos
+# this installs packages from all fedora/rpm repos
 dnf5 install -y \
     gparted \
     fastfetch \
