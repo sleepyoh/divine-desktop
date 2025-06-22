@@ -9,4 +9,4 @@ rm \
     /etc/system-release-cpe \
     /etc/yum.repos.d/rpmfusion*
 
-    cp /usr/share/local/os-release /etc/os-release
+    cp /usr/local/share/os-release /etc/os-release
