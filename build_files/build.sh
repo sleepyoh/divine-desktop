@@ -21,7 +21,10 @@ echo "Installing Steam theme..."
 bash "$SCRIPT_DIR/05steam-vapor.sh"
 
 echo "Cleaning up..."
-bash "$SCRIPT_DIR/06cleanup.sh"
+bash "$SCRIPT_DIR/06rmetc.sh"
+
+echo "Cleaning up..."
+bash "$SCRIPT_DIR/07cleanup.sh"
 
 echo "Build process completed."
 
