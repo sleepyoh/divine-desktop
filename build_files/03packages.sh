@@ -9,7 +9,8 @@ dnf5 install -y \
     ptyxis \
     adobe-source-code-pro-fonts \
     steam-devices \
-    zstd
+    zstd \
+    just
 
 # remove default useless packages
     dnf5 remove -y \
