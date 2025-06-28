@@ -5,6 +5,12 @@ set -ouex pipefail
 #dnf5 -y config-manager setopt "rpmfusion*.enabled=0"
 #dnf5 -y config-manager setopt "fedora-cisco-openh264.enabled=0"
 
+##Adding local container-storage so we can pull images from, our locally hosted container storage.
+#echo -e "[[registry]]\nlocation = \"192.168.1.10:5000\"\ninsecure = true" | tee -a /etc/containers/registries.conf > /dev/null
+#This is pretty stupid since changes in /etc is persistant and this only matters The first time we switch to a local image. This is 
+#better done on booted host before, and if ever switching to this image. 
+
+
 # Disabling a default fedora repo for som copr-python thing
 dnf5 -y copr remove phracek/PyCharm
 
