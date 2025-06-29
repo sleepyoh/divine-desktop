@@ -1,6 +1,9 @@
 #!/bin/bash
 set -ouex pipefail
 
+# Virtualization stuff
+dnf5 install -y @virtualization
+
 # this installs packages from all fedora/rpm repos
 dnf5 install -y \
     gparted \
@@ -10,7 +13,7 @@ dnf5 install -y \
     adobe-source-code-pro-fonts \
     steam-devices \
     zstd \
-    just
+    just 
 
 # remove default useless packages
     dnf5 remove -y \

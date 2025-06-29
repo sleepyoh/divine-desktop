@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 set -euox pipefail
 
-	# Enabling systemd-services
-    systemctl enable podman.socket
+	# Enabling systemd-services   
+	systemctl enable podman.socket
     systemctl enable flatpak-add-flathub-repo.service
 	systemctl enable flatpak-replace-fedora-apps.service
 	systemctl enable flatpak-cleanup.timer

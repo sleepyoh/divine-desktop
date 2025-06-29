@@ -23,5 +23,20 @@ find /var/cache/* -maxdepth 0 -type d \! -name libdnf5 \! -name rpm-ostree -exec
 mkdir -p /var/tmp
 chmod -R 1777 /var/tmp
 
+##Virtualization stuff, needs to happen late in the build!
+#Making directories and fixing permissions.
+mkdir -p /var/lib/libvirt/qemu/nvram 
+mkdir -p /var/lib/libvirt/images  
+chown root:qemu /var/lib/libvirt/qemu /var/lib/libvirt/qemu/nvram /var/lib/libvirt/images
+chmod 0770 /var/lib/libvirt/qemu /var/lib/libvirt/qemu/nvram /var/lib/libvirt/images
+restorecon -rv /var/lib/libvirt
+restorecon -rv /var/log/libvirt
+systemctl enable libvirtd.service
+
+echo "--- Verifying libvirt directories and qemu user during build ---" && \
+    id qemu && \
+    ls -ld /var/lib/libvirt /var/lib/libvirt/qemu /var/lib/libvirt/qemu/nvram /var/lib/libvirt/images && \
+    echo "--- Verification complete ---"
+
 # Cleanup specific to bootc (important for non-empty boot issue) not needed if not changing to CachyOs kernel.
 rm -rf /boot && mkdir /boot # This line is good and should be kept, we get non empty boot errors otherwise.
