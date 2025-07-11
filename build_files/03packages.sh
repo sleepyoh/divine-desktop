@@ -13,7 +13,18 @@ dnf5 install -y \
     adobe-source-code-pro-fonts \
     steam-devices \
     zstd \
-    just
+    just \
+    tmux \
+    yt-dlp \
+    traceroute \
+    nmap \
+    unrar \
+    htop \
+    btop \
+    gdu \
+    fish \
+    speedtest-cli 
+
 
 # remove default useless packages
     dnf5 remove -y \
