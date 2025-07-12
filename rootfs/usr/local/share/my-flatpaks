@@ -8,9 +8,6 @@ org.kde.okular
 org.mozilla.firefox
 org.telegram.desktop
 org.videolan.VLC
-org.virt_manager.virt-manager
-org.virt_manager.virt_manager.Extension.Qemu
-com.github.Matoking.protontricks/
 org.libreoffice.LibreOffice
 com.vscodium.codium
 com.github.tchx84.Flatseal
@@ -21,9 +18,6 @@ com.valvesoftware.Steam
 dev.geopjr.Archives
 io.github.flattool.Warehouse
 io.missioncenter.MissionCenter
-net.davidotek.pupgui2
-org.gnome.Boxes
-org.gnome.Boxes.Extension.OsinfoDb
 org.gnome.Maps
 org.gtk.Gtk3theme.adw-gtk3
 org.gtk.Gtk3theme.adw-gtk3-dark

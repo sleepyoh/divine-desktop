@@ -23,7 +23,10 @@ dnf5 install -y \
     btop \
     gdu \
     fish \
-    speedtest-cli 
+    speedtest-cli \
+    lolcat \
+    cowsay \
+    cmatrix
 
 
 # remove default useless packages
