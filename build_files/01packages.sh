@@ -8,11 +8,22 @@ dnf5 install -y @virtualization
 dnf5 install -y \
     gparted \
     ptyxis \
-    bottles \
     steam \
+    obs-studio \
+    obs-studio-plugin-vkcapture \
+    obs-studio-plugin-vaapi \
+    obs-studio-plugin-x264 \
+    obs-studio-plugin-vlc-video \
+    gnome-maps \
     handbrake \
+    handbrake-gui \
+    telegram-desktop \
     vlc \
     okular \
+    libreoffice-core \
+    libreoffice-writer \
+    libreoffice-impress \
+    libreoffice-calc \
     kolourpaint \
     kdenlive \
     kcalc \
