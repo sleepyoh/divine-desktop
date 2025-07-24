@@ -7,9 +7,21 @@ dnf5 install -y @virtualization
 # this installs packages from all fedora/rpm repos
 dnf5 install -y \
     gparted \
+    ptyxis \
+    bottles \
+    steam \
+    handbrake \
+    vlc \
+    okular \
+    kolourpaint \
+    kdenlive \
+    kcalc \
+    kate \
+    gwenview \
+    ktorrent \
+    mangohud \
     fastfetch \
     distrobox \
-    ptyxis \
     adobe-source-code-pro-fonts \
     steam-devices \
     zstd \
@@ -38,8 +50,6 @@ dnf5 install -y \
     khelpcenter \
     plasma-welcome-fedora \
     plasma-welcome \
-    firefox \
-    firefox-langpacks \
     krfb \
     krfb-libs \
     kdebugsettings \

@@ -1,7 +1,8 @@
 NAME="Sleepy Linux"
-VERSION="Kinoite"
-RELEASE_TYPE="Sometimes I update"
+VERSION="Plasma"
+RELEASE_TYPE="Stable"
 VERSION_ID=42
 VERSION_CODENAME="Pretty Kinoite Sleepy-version"
-PRETTY_NAME="Sleepy Linux 42(Kinoite)"
+PRETTY_NAME="Sleepy Linux Plasma"
 ANSI_COLOR="0;38;2;60;110;180"
+LOGO=/home/sleepy/.config/skull.png
