@@ -7,6 +7,14 @@ dnf5 install -y @virtualization
 # this installs packages from all fedora/rpm repos
 dnf5 install -y \
     gparted \
+    gnome-maps \
+    kcalc \
+    kate \
+    gwenview \
+    okular \
+    ktorrent \
+    kolourpaint \
+    kdenlive \
     ptyxis \
     steam \
     obs-studio \
@@ -14,25 +22,19 @@ dnf5 install -y \
     obs-studio-plugin-vaapi \
     obs-studio-plugin-x264 \
     obs-studio-plugin-vlc-video \
-    gnome-maps \
     handbrake \
     handbrake-gui \
     telegram-desktop \
     vlc \
-    okular \
     libreoffice-core \
     libreoffice-writer \
     libreoffice-impress \
     libreoffice-calc \
-    kolourpaint \
-    kdenlive \
-    kcalc \
-    kate \
-    gwenview \
-    ktorrent \
     mangohud \
     fastfetch \
     distrobox \
+    google-roboto-fonts \
+    rsms-inter-fonts \
     adobe-source-code-pro-fonts \
     steam-devices \
     zstd \
