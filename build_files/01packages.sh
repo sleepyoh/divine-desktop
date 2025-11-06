@@ -17,6 +17,7 @@ dnf5 install -y \
     kdenlive \
     ptyxis \
     steam \
+    bottles \
     obs-studio \
     obs-studio-plugin-vkcapture \
     obs-studio-plugin-vaapi \
