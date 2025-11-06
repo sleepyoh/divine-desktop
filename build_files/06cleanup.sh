@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ouex pipefail
 
-# To disable all RPM Fusion repos with a wildcard (if supported)
+# To disable all RPM Fusion repos with a wildcard 
 #dnf5 -y config-manager setopt "rpmfusion*.enabled=0"
 #dnf5 -y config-manager setopt "fedora-cisco-openh264.enabled=0"
 
