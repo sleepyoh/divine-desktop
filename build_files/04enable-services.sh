@@ -2,12 +2,12 @@
 set -euox pipefail
 
 	# Enabling systemd-services
-    systemctl enable libvirtd.service
+    #systemctl enable libvirtd.service
 	systemctl enable podman.socket
     systemctl enable flatpak-add-flathub-repo.service
 	systemctl enable flatpak-remove-all.service
 	systemctl enable flatpak-cleanup.timer
-	systemctl enable install-my-flatpaks.service
+	#systemctl enable install-my-flatpaks.service
 	systemctl enable rpm-ostreed-automatic.timer
 	###Disabling stuff I dont want or need
 	systemctl disable bluetooth.service # I dont have bluetooth
