@@ -11,8 +11,8 @@ bash "$SCRIPT_DIR/00enarpmfus.sh"
 echo "Installing and removing packages..."
 bash "$SCRIPT_DIR/01packages.sh"
 
-#echo "Installing copr stuff..."
-#bash "$SCRIPT_DIR/02cachy-kernel.sh"
+echo "Installing copr stuff..."
+bash "$SCRIPT_DIR/02cachy-kernel.sh"
 
 echo "Installing Steam theme..."
 bash "$SCRIPT_DIR/03steam-vapor.sh"
