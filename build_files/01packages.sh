@@ -10,7 +10,6 @@ dnf5 install -y \
     gwenview \
     okular \
     ptyxis \
-    mangohud \
     fastfetch \
     distrobox \
     google-roboto-fonts \
