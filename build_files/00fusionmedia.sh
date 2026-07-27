@@ -16,4 +16,3 @@ dnf5 install -y \
     gstreamer1-plugins-ugly
 
 dnf5 swap -y mesa-va-drivers mesa-va-drivers-freeworld --allowerasing
-dnf5 swap -y mesa-vdpau-drivers mesa-vdpau-drivers-freeworld --allowerasing
