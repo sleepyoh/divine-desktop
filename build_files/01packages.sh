@@ -45,7 +45,14 @@ dnf5 install -y \
     konsole \
     plasma-drkonqi \
     firefox \
-    firefox-langpacks
+    firefox-langpacks \
+    kinfocenter \
+    kwalletmanager \
+    plasma-systemmonitor\
+    ksystemlog \
+    plasma-discover \
+    kjournald \
+    kjournald-libs
 
 # We can remove this safely if we want to, but it might be useful to keep.
     #kjournald \
