@@ -12,8 +12,6 @@ dnf5 install -y \
     ptyxis \
     fastfetch \
     distrobox \
-    google-roboto-fonts \
-    rsms-inter-fonts \
     adobe-source-code-pro-fonts \
     steam-devices \
     just \
