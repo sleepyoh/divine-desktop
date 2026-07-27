@@ -47,9 +47,8 @@ dnf5 install -y \
     firefox \
     firefox-langpacks \
     kinfocenter \
-    kwalletmanager \
+    kwalletmanager5 \
     plasma-systemmonitor\
-    ksystemlog \
     plasma-discover \
     kjournald \
     kjournald-libs
