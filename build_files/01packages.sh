@@ -6,10 +6,6 @@ set -ouex pipefail
 
 # this installs packages from all fedora/rpm repos
 dnf5 install -y \
-    kcalc \
-    gwenview \
-    okular \
-    ptyxis \
     fastfetch \
     distrobox \
     adobe-source-code-pro-fonts \
@@ -42,7 +38,6 @@ dnf5 install -y \
     krfb \
     krfb-libs \
     kdebugsettings \
-    konsole \
     plasma-drkonqi \
     firefox \
     firefox-langpacks \
