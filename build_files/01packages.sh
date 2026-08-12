@@ -52,7 +52,3 @@ dnf5 install -y \
     plasma-discover \
     kjournald \
     kjournald-libs
-
-# We can remove this safely if we want to, but it might be useful to keep.
-    #kjournald \
-    #kjournald-libs \
