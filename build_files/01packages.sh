@@ -4,11 +4,11 @@ set -ouex pipefail
 # Virtualization stuff
 #dnf5 install -y @virtualization
 
-dnf install -y \
-    kernel-7.1.5* \
-    kernel-core-7.1.5* \
-    kernel-modules-7.1.5* \
-    kernel-modules-extra-7.1.5* --allowerasing
+#dnf install -y \
+    #kernel-7.1.5* \
+    #kernel-core-7.1.5* \
+    #kernel-modules-7.1.5* \
+    #kernel-modules-extra-7.1.5* --allowerasing
 
 # this installs packages from all fedora/rpm repos
 dnf5 install -y \
