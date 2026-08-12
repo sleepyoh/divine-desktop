@@ -21,12 +21,11 @@ dnf5 install -y \
     yt-dlp \
     traceroute \
     nmap \
-    unrar \
+    unar \
     htop \
     btop \
     gdu \
     fish \
-    speedtest-cli \
     lolcat \
     cowsay \
     cmatrix
