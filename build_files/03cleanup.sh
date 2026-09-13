@@ -3,7 +3,7 @@ set -ouex pipefail
 
 # To disable all RPM Fusion repos with a wildcard 
 #dnf5 -y config-manager setopt "rpmfusion*.enabled=0"
-#dnf5 -y config-manager setopt "fedora-cisco-openh264.enabled=0"
+dnf5 -y config-manager setopt "fedora-cisco-openh264.enabled=0"
 
 # Disabling a default fedora repo for som copr-python thing
 dnf5 -y copr remove phracek/PyCharm
@@ -12,8 +12,8 @@ dnf5 -y copr remove phracek/PyCharm
 # Clean package manager cache
 dnf5 clean all
 
-# Clean temporary files
-#rm -rf /tmp/*
+#Clean temporary files
+rm -rf /tmp/*
 
 # Clean /var directory while preserving essential files
 #find /var/* -maxdepth 0 -type d \! -name cache -exec rm -fr {} \;

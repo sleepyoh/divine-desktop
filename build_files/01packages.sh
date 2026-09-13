@@ -21,12 +21,11 @@ dnf5 install -y \
     yt-dlp \
     traceroute \
     nmap \
-    unrar \
+    unar \
     htop \
     btop \
     gdu \
     fish \
-    speedtest-cli \
     lolcat \
     cowsay \
     cmatrix
@@ -53,7 +52,3 @@ dnf5 install -y \
     plasma-discover \
     kjournald \
     kjournald-libs
-
-# We can remove this safely if we want to, but it might be useful to keep.
-    #kjournald \
-    #kjournald-libs \
