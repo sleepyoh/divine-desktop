@@ -21,7 +21,6 @@ dnf5 install -y \
     yt-dlp \
     traceroute \
     nmap \
-    unar \
     htop \
     btop \
     gdu \
