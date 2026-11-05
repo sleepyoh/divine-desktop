@@ -1,6 +1,14 @@
 # Purpose
 
-This repository is a custom build of Fedora silverblue, inspired originally by Ublue, and it's images. 
+This repository is a custom build of Fedora Kinoite (KDE Plasma), inspired originally by Ublue, and its images.
+
+# Install
+
+Install Fedora Kinoite normally, then switch to this image:
+
+```
+sudo bootc switch ghcr.io/sleepyoh/sleepy-kde:latest
+```
 
 # Goal
 

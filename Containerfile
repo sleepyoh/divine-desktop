@@ -8,8 +8,6 @@ COPY system_files /system_files
 
 # Base Image
 FROM quay.io/fedora/fedora-kinoite:${FEDORA_MAJOR_VERSION}
-# quay.io/fedora-ostree-desktops/silverblue This is apparently new location? in between the bootc locaiton 
-# they are in the process of migrating to? not sure. 
 
 ## Other possible base images include:
 #Universal Blue Images: https://github.com/orgs/ublue-os/packages
