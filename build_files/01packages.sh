@@ -1,16 +1,14 @@
 #!/bin/bash
 set -ouex pipefail
 
-# Virtualization stuff
-#dnf5 install -y @virtualization
-
+# Pin a specific kernel version (uncomment and set version if needed)
 #dnf install -y \
     #kernel-7.1.5* \
     #kernel-core-7.1.5* \
     #kernel-modules-7.1.5* \
     #kernel-modules-extra-7.1.5* --allowerasing
 
-# this installs packages from all fedora/rpm repos
+# Install packages
 dnf5 install -y \
     fastfetch \
     distrobox \
@@ -23,15 +21,30 @@ dnf5 install -y \
     nmap \
     htop \
     btop \
+    java-25-openjdk \
     gdu \
     fish \
     lolcat \
     cowsay \
     cmatrix
 
+# Install applications
+dnf5 install -y \
+    obs-studio \
+    obs-studio-plugin-vkcapture \
+    mangohud \
+    mangohud.i686 \
+    bottles \
+    gnome-boxes \
+    gwenview \
+    kcalc \
+    ktorrent \
+    okular \
+    remmina \
+    vlc
 
-# remove default useless packages
-    dnf5 remove -y \
+# Remove default packages I don't use
+dnf5 remove -y \
     filelight \
     kfind \
     kcharselect \
@@ -43,8 +56,6 @@ dnf5 install -y \
     krfb-libs \
     kdebugsettings \
     plasma-drkonqi \
-    firefox \
-    firefox-langpacks \
     kinfocenter \
     kwalletmanager5 \
     plasma-systemmonitor \
