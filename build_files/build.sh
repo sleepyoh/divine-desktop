@@ -5,8 +5,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 echo "Starting build process..."
 
-# Copy the contents of system_files/ of the git repo to /
-
+# Copy system_files/ from the repo into the image root
 echo "Copying system-files"
 cp -avf "/ctx/system_files"/. /
 

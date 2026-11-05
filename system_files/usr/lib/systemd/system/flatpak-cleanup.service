@@ -1,3 +1,4 @@
+# Started by flatpak-cleanup.timer; enable the timer, not this service.
 [Unit]
 Description=Remove unused flatpaks
 Documentation=man:flatpak-uninstall(1)
@@ -5,9 +6,3 @@ Documentation=man:flatpak-uninstall(1)
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/flatpak uninstall --noninteractive --unused
-
-[Install]
-WantedBy=multi-user.target
-
-
-#You do not enable this service, you enable the timer, and the timer triggers this service.
