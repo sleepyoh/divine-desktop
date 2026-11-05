@@ -31,6 +31,9 @@ dnf5 install -y \
 # Install applications
 dnf5 install -y \
     obs-studio \
+    obs-studio-plugin-vkcapture \
+    mangohud \
+    mangohud.i686 \
     bottles \
     gnome-boxes \
     gwenview \
