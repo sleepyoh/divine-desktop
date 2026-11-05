@@ -21,6 +21,7 @@ dnf5 install -y \
     nmap \
     htop \
     btop \
+    java-25-openjdk \
     gdu \
     fish \
     lolcat \

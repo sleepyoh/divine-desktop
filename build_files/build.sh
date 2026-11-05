@@ -21,10 +21,13 @@ bash "$SCRIPT_DIR/03thirdparty.sh"
 echo "Installing Mission Center..."
 bash "$SCRIPT_DIR/04missioncenter.sh"
 
+echo "Installing Mindustry..."
+bash "$SCRIPT_DIR/05mindustry.sh"
+
 echo "Enabling services..."
-bash "$SCRIPT_DIR/05systemctl.sh"
+bash "$SCRIPT_DIR/06systemctl.sh"
 
 echo "Cleaning up..."
-bash "$SCRIPT_DIR/06cleanup.sh"
+bash "$SCRIPT_DIR/07cleanup.sh"
 
 echo "Build process completed."
