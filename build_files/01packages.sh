@@ -27,6 +27,18 @@ dnf5 install -y \
     cowsay \
     cmatrix
 
+# Install applications
+dnf5 install -y \
+    obs-studio \
+    bottles \
+    gnome-boxes \
+    gwenview \
+    kcalc \
+    ktorrent \
+    okular \
+    remmina \
+    vlc
+
 # Remove default packages I don't use
 dnf5 remove -y \
     filelight \
@@ -40,8 +52,6 @@ dnf5 remove -y \
     krfb-libs \
     kdebugsettings \
     plasma-drkonqi \
-    firefox \
-    firefox-langpacks \
     kinfocenter \
     kwalletmanager5 \
     plasma-systemmonitor \

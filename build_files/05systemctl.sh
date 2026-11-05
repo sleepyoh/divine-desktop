@@ -3,7 +3,6 @@ set -euox pipefail
 
 # Enable services
 systemctl enable podman.socket
-systemctl enable flatpak-cleanup.timer
 
 # Disable services I don't need
 systemctl disable bluetooth.service          # no bluetooth
