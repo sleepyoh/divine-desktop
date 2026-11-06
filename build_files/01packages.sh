@@ -41,7 +41,10 @@ dnf5 install -y \
     ktorrent \
     okular \
     remmina \
-    vlc
+    vlc \
+    kolourpaint \
+    krita \
+    kdenlive
 
 # Remove default packages I don't use
 dnf5 remove -y \
