@@ -13,4 +13,5 @@ dnf5 install -y mesa-va-drivers-freeworld
 # Applications from RPM Fusion
 dnf5 install -y \
     steam \
-    telegram-desktop
+    telegram-desktop \
+    psxc2
