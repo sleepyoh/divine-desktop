@@ -14,4 +14,4 @@ dnf5 install -y mesa-va-drivers-freeworld
 dnf5 install -y \
     steam \
     telegram-desktop \
-    psxc2
+    pcsx2
