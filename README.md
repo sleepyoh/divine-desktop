@@ -6,7 +6,7 @@ A custom [Fedora Kinoite](https://fedoraproject.org/atomic-desktops/kinoite/) (K
 
 - Removes default applications I don't use
 - Adds command-line tools I use daily
-- Disables services I don't need
+- Removes VM guest tools and disables services I don't need
 - Shortens the systemd shutdown timeout to 15 seconds
 
 ## Install
