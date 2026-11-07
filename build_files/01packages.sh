@@ -32,6 +32,8 @@ dnf5 install -y \
 dnf5 install -y \
     obs-studio \
     obs-studio-plugin-vkcapture \
+    obs-studio-plugin-vkcapture-hook-libs.x86_64 \
+    obs-studio-plugin-vkcapture-hook-libs.i686 \
     mangohud.x86_64 \
     mangohud.i686 \
     bottles \
