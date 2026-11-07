@@ -67,3 +67,49 @@ dnf5 remove -y \
     plasma-discover \
     kjournald \
     kjournald-libs
+
+# Remove printing and scanning (no printer/scanner on this PC)
+dnf5 remove -y \
+    cups \
+    cups-filters \
+    cups-browsed \
+    cups-filters-driverless \
+    cups-client \
+    cups-ipptool \
+    bluez-cups \
+    system-config-printer-udev \
+    system-config-printer-libs \
+    python3-cups \
+    hplip \
+    hplip-common \
+    hplip-libs \
+    gutenprint \
+    gutenprint-cups \
+    gutenprint-libs \
+    ptouch-driver \
+    splix \
+    c2esp \
+    printer-driver-brlaser \
+    mpage \
+    ghostscript-tools-printing \
+    sane-backends \
+    sane-backends-drivers-cameras \
+    sane-backends-drivers-scanners \
+    sane-airscan \
+    libsane-airscan \
+    libsane-hpaio
+
+# Remove Asian-language input methods (CJK fonts stay, so Asian text still displays)
+dnf5 remove -y \
+    ibus \
+    ibus-anthy \
+    ibus-anthy-python \
+    ibus-hangul \
+    ibus-libpinyin \
+    ibus-m17n \
+    ibus-typing-booster \
+    ibus-chewing \
+    ibus-setup \
+    ibus-panel \
+    ibus-gtk3 \
+    ibus-gtk4

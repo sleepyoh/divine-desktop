@@ -16,5 +16,4 @@ systemctl disable vmtoolsd.service           # VMware guest
 systemctl disable sssd.service               # LDAP/Active Directory
 systemctl disable gssproxy.service           # Kerberos/GSSAPI/AD
 systemctl disable switcheroo-control.service # hybrid graphics laptops
-systemctl disable cups.service               # no printer
 systemctl disable systemd-homed.service      # not using systemd-homed
