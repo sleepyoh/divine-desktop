@@ -17,3 +17,7 @@ systemctl disable sssd.service               # LDAP/Active Directory
 systemctl disable gssproxy.service           # Kerberos/GSSAPI/AD
 systemctl disable switcheroo-control.service # hybrid graphics laptops
 systemctl disable systemd-homed.service      # not using systemd-homed
+
+# cups.service is gone because the printing removal block in 01packages.sh removes CUPS.
+# REMINDER: if that block is ever removed, uncomment this line to keep CUPS disabled.
+#systemctl disable cups.service               # no printer

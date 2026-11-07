@@ -69,6 +69,7 @@ dnf5 remove -y \
     kjournald-libs
 
 # Remove printing and scanning (no printer/scanner on this PC)
+# If you delete this block, uncomment "systemctl disable cups.service" in 06systemctl.sh
 dnf5 remove -y \
     cups \
     cups-filters \
