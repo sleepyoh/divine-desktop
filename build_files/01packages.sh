@@ -100,6 +100,12 @@ dnf5 remove -y \
     libsane-airscan \
     libsane-hpaio
 
+# Remove VM guest tools (this runs on bare metal, not inside a VM)
+# If you delete this block, uncomment the VM guest lines in 06systemctl.sh
+dnf5 remove -y \
+    open-vm-tools \
+    virtualbox-guest-additions
+
 # Remove Asian-language input methods (CJK fonts stay, so Asian text still displays)
 dnf5 remove -y \
     ibus \
