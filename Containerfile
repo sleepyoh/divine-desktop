@@ -1,4 +1,4 @@
-ARG FEDORA_MAJOR_VERSION=44
+ARG FEDORA_MAJOR_VERSION=45
 
 # Build context: makes build_files/ and system_files/ available to build.sh
 # without copying them into the final image
