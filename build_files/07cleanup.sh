@@ -3,7 +3,6 @@ set -ouex pipefail
 
 # Disable repos I don't need
 dnf5 -y config-manager setopt "fedora-cisco-openh264.enabled=0"
-dnf5 -y copr remove phracek/PyCharm
 
 # Remove RPM Fusion repos (added in 02rpmfusion.sh); installed packages stay
 dnf5 remove -y rpmfusion-free-release rpmfusion-nonfree-release

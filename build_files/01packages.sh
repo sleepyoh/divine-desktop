@@ -32,7 +32,7 @@ dnf5 install -y \
 dnf5 install -y \
     obs-studio \
     obs-studio-plugin-vkcapture \
-    mangohud \
+    mangohud.x86_64 \
     mangohud.i686 \
     bottles \
     gnome-boxes \
